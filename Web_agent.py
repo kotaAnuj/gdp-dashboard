@@ -2,8 +2,8 @@
 # config.py
 import os
 
+GOOGLE_API_KEY = "AIzaSyA5HtRnzGruiia-aKtMMLnBjJ0ovTh11nE"
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 WIKIPEDIA_USER_AGENT = "WebsiteBuilderBot/1.0"
 
 # Theme configuration
