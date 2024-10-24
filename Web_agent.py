@@ -120,6 +120,19 @@ import streamlit as st
 
 logging.basicConfig(level=logging.INFO)
 
+import wikipedia
+class WikipediaAPIWrapper:
+       def fetch_wikipedia_summary(query):
+             wikipedia.set_lang("en")
+       try:
+            summary = wikipedia.summary(query, sentences=2)
+            return summary
+       except Exception as e:
+             return f"Error fetching data: {e}"
+
+
+
+
 class BaseAgent(ABC):
     def __init__(self, model: Any, temperature: float = 0.7):
         self.model = model
