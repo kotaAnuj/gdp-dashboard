@@ -16,6 +16,100 @@ CLAUDE_COLORS = {
     'accent': '#FFE4DC'
 }
 
+
+# main.py
+CUSTOM_CSS = """
+<style>
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header styles */
+h1 {
+    color: #FF5722;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Sidebar styles */
+.sidebar .stButton button {
+    background-color: #FF7043;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .stButton button:hover {
+    background-color: #E64A19;
+}
+
+/* Custom button styles */
+.stButton>button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.stButton>button:hover {
+    background-color: #388E3C;
+}
+
+/* Input field styles */
+.stTextInput>div>input {
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
+/* Streamlit container modifications */
+.reportview-container .main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer modifications */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F0F0F0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF5722;
+    border-radius: 10px;
+}
+</style>
+"""
+
+
 # agents/base_agent.py
 from abc import ABC, abstractmethod
 import google.generativeai as genai
