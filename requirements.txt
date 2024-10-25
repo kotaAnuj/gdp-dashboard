@@ -10,7 +10,7 @@ requests
 crewai
 langchain
 google-generativeai
-wikipedia-api
+wikipedia
 python-dotenv
 beautifulsoup4
 requests
