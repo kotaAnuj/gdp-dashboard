@@ -120,15 +120,18 @@ import streamlit as st
 
 logging.basicConfig(level=logging.INFO)
 
-import wikipedia
+import wikipedia # Importing wikipedia after installation
+
 class WikipediaAPIWrapper:
-       def fetch_wikipedia_summary(query):
-             wikipedia.set_lang("en")
-       try:
+    def fetch_wikipedia_summary(query):
+        wikipedia.set_lang("en")
+        try:
             summary = wikipedia.summary(query, sentences=2)
             return summary
-       except Exception as e:
-             return f"Error fetching data: {e}"
+        except Exception as e:
+            # Add error handling here
+            logging.error(f"Error fetching Wikipedia summary: {e}")  # Log the error
+            return None  # or raise the exception again: raise e
 
 
 
