@@ -6,13 +6,6 @@ jsmin
 pillow
 beautifulsoup4
 requests
-
-crewai
-langchain
-google-generativeai
-wikipedia
-python-dotenv
-beautifulsoup4
-requests
-aiohttp
-html5lib
+torch
+transformers
+protobuf
