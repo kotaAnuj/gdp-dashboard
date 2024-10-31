@@ -6,6 +6,8 @@ jsmin
 pillow
 beautifulsoup4
 requests
+
 torch
 transformers
 protobuf
+sentencepiece
